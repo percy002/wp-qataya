@@ -1,0 +1,248 @@
+/* 
+    Theme Name: Qataya
+    Theme URI:
+    Author: Percy BJC
+    Author URI: 
+    Desciption: Theme diseñado para Qataya
+    Version: 1.0
+    Licencia: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.hmtl
+    Tags: Manufacturing, Clothing, flexbox
+    Text Domain: qataya
+
+*/
+/* custom properties */
+:root{
+    /* fuentes */
+    --main-font: 'Playfair Display', serif;
+    --body-font: 'Lato', sans-serif;
+
+    /* colores */
+    --main-color: #916029;
+    --main-color-alfa: #916029BF;
+
+    /* --colorSecundario: #F2E205; */
+
+    /* escala de grises */
+    --grey-light-color: #E3E2E2;
+    --grey-color: #7E8C7B;
+    /* --grey-dark-color: #282A36; */
+    --grey-dark-color: #18191d;
+    --black-color: #000000;
+}
+
+html{
+    box-sizing: border-box !important;
+    font-size: 62.5%; /*10px = 1rem*/
+}
+body{
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-family: var(--body-font);
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+hr{
+    margin-top: 2rem;
+    border: 1px solid  var(--blanco);
+    width: 70%;
+}
+h1,h2,h3,h4{
+    font-family: var(--main-font);
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-weight: 600;
+    text-align: center;
+}
+h1{
+    font-size: 4.0rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+h3{
+    font-size: 2.4rem;
+}
+h4{
+    font-size: 1.6rem;
+}
+h5{
+    font-size: 1.3rem;
+}
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: var(--grey-dark-color);
+}
+
+strong{
+    font-weight: 600;
+}
+p{
+    color: var(--grey-dark-color);
+    letter-spacing: .07rem;
+}
+/* ul sin estilos */
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+nav a{
+    /* color: var(--grey-dark-color); */
+    color: var(--grey-light-color);
+    /* color: var(--main-color); */
+}
+ 
+/* imagenes respnsivas */
+img{
+    max-width: 100%;
+    height: auto;
+}
+nav{
+    /* background-color: var(--grey-light-color); */
+    background-color: var(--main-color);
+}
+label{
+    font-family: var(--main-font);
+    font-size: 1.6rem;
+    color: var(--grey-dark-color);
+    
+    font-weight: 600;
+}
+.wpcf7-submit{
+    color: var(--grey-dark-color);
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    cursor: pointer;  
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+.wpcf7-text,
+.wpcf7-textarea{
+    color: var(--grey-dark-color);
+    font-family: var(--body-font);
+    font-size: 1.6rem;
+    border-bottom: 1px solid var(--main-color-alfa) !important;
+}
+/* stilos de contenedor */
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.double{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+@media (min-width:768px) {
+    .double{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.bg-grey{
+    background-color: var(--grey-dark-color);
+    padding: 2rem;
+}
+.bg-grey p{
+    text-align: center;
+}
+.bg-grey h1,
+.bg-grey h2,
+.bg-grey h3,
+.bg-grey h4,
+.bg-grey h5,
+.bg-grey p{
+    color: var(--grey-light-color);
+    margin: 0;
+}
+
+.hero-secondary{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+.hero-secondary h2{
+    margin: 0;
+    color: var(--blanco);
+}
+.text-justify p{
+    text-align: justify;
+}
+.text-center p{
+    text-align: center;
+}
+.sub-h3  h3{
+    border-bottom: 1px solid var(--main-color-alfa);
+    margin: 0 auto;
+    width: 60%;
+}
+/* arrow slider */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+  }
+  
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .middle-indicator{
+     position:absolute;
+     top:50%;
+     }
+    .middle-indicator-text{
+     font-size: 5.2rem;
+    }
+    a.middle-indicator-text{
+      color:white !important;
+    }
+  .content-indicator{
+      width: 64px;
+      height: 64px;
+      background: none;
+      -moz-border-radius: 50px;
+      -webkit-border-radius: 50px;
+      border-radius: 50px; 
+    }
+      .indicators{
+        visibility: hidden;
+    }
+.carousel-fixed-item i{
+    color: var(--grey-light-color);
+}
+
+/* modified card */
+.card .card-image .card-title{
+    color: var(--grey-light-color);
+    background-color: var(--grey-dark-color);
+}
+
+  

@@ -1,0 +1,51 @@
+.hero-home{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.hero-home .slides{
+    height: 100% !important;
+}
+
+
+.abstract__text{
+    
+}
+@media (min-width:768px) {
+    .abstract__text{
+        padding: 1.5rem 0;
+        margin-right: 6rem;
+    }
+    .abstract__text p{
+        margin-left: 6rem;
+    }
+}
+.abstract div{
+    flex: 1 1 50%;
+}
+.catalogo{
+}
+.catalogo a{
+    line-height: 0;
+}
+.catalogo p{
+    text-align: center;
+}
+.catalogo__img{
+    position: relative;
+}
+.catalogo__img span{
+    font-weight: 600;
+    color: var(--grey-dark-color);
+    text-decoration-line: underline;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+

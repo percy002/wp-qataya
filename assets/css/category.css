@@ -1,0 +1,28 @@
+
+@media (min-width:480px) {
+    .categoryTitle{
+        margin-top: 6rem;
+        justify-content: start;
+        
+    }
+}
+.listProducts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.listProducts a{
+    color: var(--grey-dark-color);
+}
+@media (min-width:480px) {
+    .listProducts{
+        justify-content: space-around;
+        
+    }
+}
+
+@media (min-width:480px) {
+    .listProducts > div{
+        min-width: 200px;
+        width: 28%;
+    } 
+}

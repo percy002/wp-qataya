@@ -1,0 +1,58 @@
+nav .brand-logo img{
+    padding: 0.5rem !important;
+}
+.nav-wrapper ul a{
+    /* color: var(--grey-dark-color); */
+    color: var(--grey-light-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+nav ul a:hover{
+    background-color: var(--main-color-alfa) !important;
+}
+
+.sidenav{
+    background-color: var(--main-color) !important;
+}
+.sidenav li>a{
+    font-size: 1.6rem !important;
+    padding: 0 32px !important;
+    font-family: var(--body-font);
+    font-weight: 600 !important;
+    /* color: var(--grey-dark-color) !important; */
+    color: var(--grey-light-color) !important;
+}
+.sub-menu{
+    padding-left: 2rem !important;
+    background-color: var(--main-color) !important; 
+}
+@media (min-width:992px) {
+    .sub-menu{
+        padding: 0 !important;
+    }
+}
+.collapsible-body ul a{
+    padding: 0 44px;
+}
+.current-lang a{
+    text-decoration: underline double;
+    text-decoration-color: var(--main-color-alfa);
+}
+.dropdown-content li>a, .dropdown-content li>span{
+    color: var(--grey-light-color) !important;
+    
+}
+/* bug materialize */
+.dropdown-content{
+    overflow-x: hidden !important;
+}
+li a.dropdown-trigger:focus {
+    outline: none;
+}
+
+#main-menu ul{
+    margin-top: -0.5rem;
+
+}
+/* menu mobile */

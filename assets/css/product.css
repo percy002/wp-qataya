@@ -1,0 +1,30 @@
+.product{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:768px) {
+    .product{
+        flex-direction: row;
+    }
+}
+.product div{
+    flex: 1 1 50%;
+}
+@media (min-width:992px) {
+    .product > div{
+        margin: 4rem 11rem;
+    } 
+}
+@media (min-width:768px) {
+    .product > div{
+        margin: 2rem 5rem;
+    } 
+}
+.product__img{
+    margin: 0;
+}
+@media (min-width:768px) {
+    .product__img{
+        margin: 3rem;
+    }
+}

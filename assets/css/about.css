@@ -1,0 +1,17 @@
+.about p{
+    text-align: center;
+}
+.mision-vision{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width:768px) {
+    .mision-vision{
+        flex-direction: row;
+    }
+}
+.mision-vision div{
+    flex: 1 1 50%;
+    padding: 3rem;
+}
+

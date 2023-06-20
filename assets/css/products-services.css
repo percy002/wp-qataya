@@ -1,0 +1,7 @@
+.products-services{
+    display: flex;
+    justify-content: space-around;
+}
+.products-services > div{
+    width: 38%;
+}

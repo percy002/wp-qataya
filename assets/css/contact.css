@@ -1,0 +1,23 @@
+.contact-qataya{
+    display: flex;
+    justify-content: center;
+}
+@media (min-width:768px) {
+    
+    .contact-qataya div{
+        flex-basis: 50%;
+    }
+}
+.info_qataya{
+    display: flex;
+    justify-content: center;
+    
+}
+@media (min-width:768px) {
+    .info_qataya div{
+        flex-basis: 50%;
+    }
+}
+.info_qataya h3{
+    text-align: start;
+}
