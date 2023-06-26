@@ -8,6 +8,22 @@
         if (get_field('imagen_taller')) $imagen_taller = get_field('imagen_taller');
         if (get_field('catalogo1')) $catalogo1 = get_field('catalogo1');
         if (get_field('catalogo2')) $catalogo2 = get_field('catalogo2');
+        if (get_field('catalogo3')) $catalogo3 = get_field('catalogo3');
+        if (get_field('video')) $video = get_field('video');
+
+        // Use preg_match to find iframe src.
+        preg_match('/src="(.+?)"/', $video, $matches);
+        $src = $matches[1];
+
+        // Add extra parameters to src and replace HTML.
+        $params = array(
+            'controls'  => 0,
+            'rel'=> 0,
+            'showinfo'=> 0
+        );
+        $new_src = add_query_arg($params, $src);
+        $video = str_replace($src, $new_src, $video);
+        
 
     ?>
      <div class="slider hero-home">
@@ -23,10 +39,89 @@
     </div>
     <section>
         <div class="container about-us">
-            <!-- <h1>QATAYA</h1> -->
+            <p>
+                <?php 
+                echo $abstract
+                ?>
+            </p>
         </div>
     </section>
     <section>
+        <div class="collections container row">
+            <div class="col s12 m4">
+                <div class="card z-depth-0">
+                    <div class="card-image collection-image">
+                        <a href="<?php echo get_site_url() ?>/coleccion-deep-in-nature/"><img class="responsive-image" src="<?php  echo $catalogo1['imagen1']['url'] ; ?>" alt=""></a> 
+                    </div>
+                    <div class="card-content">
+                        <a href="<?php echo get_site_url() ?>/coleccion-deep-in-nature/">
+                            <h4><?php 
+                                echo $catalogo1['titulo']
+                            ?></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card z-depth-0">
+                    <div class="card-image collection-image">
+                        <a href="<?php echo get_site_url() ?>/coleccion-ocaso/"><img class="responsive-image" src="<?php  echo $catalogo2['imagen1']['url'] ; ?>" alt=""></a> 
+                    </div>
+                    <div class="card-content">
+                        <a href="<?php echo get_site_url() ?>/coleccion-ocaso/">
+                            <h4><?php 
+                                echo $catalogo2['titulo']
+                            ?></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card z-depth-0">
+                    <div class="card-image collection-image">
+                        <a href="<?php echo get_site_url() ?>/coleccion-happy-life/"><img class="responsive-image" src="<?php  echo $catalogo3['imagen1']['url'] ; ?>" alt=""></a> 
+                    </div>
+                    <div class="card-content">
+                        <a href="<?php echo get_site_url() ?>/coleccion-happy-life/">
+                            <h4><?php 
+                                echo $catalogo3['titulo']
+                            ?></h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            
+            
+        </div>
+    </section>
+    <section>
+        <div class="video-container container">
+            <?php if(get_field('video')): ?>
+                <?php echo $video ?>
+            <?php endif ?>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h3>
+                <?php if(get_locale()=='en_US'): ?>
+                    Get In Touch With Us
+                <?php else: ?>
+                    Pongase en Contacto Con Nosotros
+                <?php endif ?>
+                
+            </h3>
+            <div class="contact-qataya">
+                <?php get_template_part("template-parts/contact_form") ?>
+            </div>
+        </div>
+    </section>
+    
+    
+    <!-- <section>
         <div class="container double abstract">
             <div class="abstract__text">
                 <h2>
@@ -54,59 +149,8 @@
                 <img src="<?php if (get_field('imagen_taller')) echo $imagen_taller['url'] ?>" alt="">
             </div>
         </div>
-    </section>
-    <?php if (get_field('catalogo1')) : ?>
-    <section>
-        <div class="catalogo container">
-            <div class="catalogo__img double">
-                <a href="http://qataya.test/es/ponchos/"><span><?php echo $catalogo1['titulo'] ; ?></span><img class="responsive-image" src="<?php  echo $catalogo1['imagen1']['url'] ; ?>" alt=""></a>                                
-                <a href="http://qataya.test/es/ponchos/"><img class="responsive-image" src="<?php  echo $catalogo1['imagen2']['url'] ; ?>" alt=""></a>                                
-                                               
-            </div>
-            <div class="catalogo__description bg-grey">
-                <h3><?php echo $catalogo1['titulo'] ; ?></h3>                    
-                <p><?php echo $catalogo1['descripcion'] ; ?>
-                </p>
-                <p>
-                    <a href="http://qataya.test/es/ponchos/">
-                        <?php if(get_locale()=='en_US'): ?>
-                            Discover more
-                        <?php else: ?>
-                            Ver mas
-                        <?php endif ?>
-                    </a>
-
-                </p>
-            </div>
-            
-        </div>
-    </section>
-    <section>
-        <div class="catalogo container">
-            <div class="catalogo__img double">
-                <a href="http://qataya.test/es/sueter/"><span><?php echo $catalogo2['titulo'] ; ?></span><img class="responsive-image" src="<?php  echo $catalogo2['imagen1']['url'] ; ?>" alt=""></a>                                
-                <a href="http://qataya.test/es/sueter/"><img class="responsive-image" src="<?php  echo $catalogo2['imagen2']['url'] ; ?>" alt=""></a>                                
-                                               
-            </div>
-            
-            <div class="catalogo__description bg-grey">
-                <h3><?php echo $catalogo2['titulo'] ; ?></h3>                    
-                <p><?php echo $catalogo2['descripcion'] ; ?>
-                </p>
-                <p>
-                    <a href="http://qataya.test/es/sueter/">
-                        <?php if(get_locale()=='en_US'): ?>
-                            Discover more
-                        <?php else: ?>
-                            Ver mas
-                        <?php endif ?>
-                    </a>
-
-                </p>
-            </div>
-        </div>
-    </section>
-    <?php endif ?>
+    </section> -->
+    
     
 <?php endwhile; ?>
 <?php get_footer() ?>

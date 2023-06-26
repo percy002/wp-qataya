@@ -1,6 +1,6 @@
 <?php 
 /*
-    Template Name: pagina Catalogo
+    Template Name: pagina Colecciones
 */
 get_header(); ?>
 
@@ -9,23 +9,21 @@ get_header(); ?>
         
         $datos_principales = get_field('datos_principales');
     ?>
-
-    <div class="hero-secondary" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
-        <div class="contenido-hero">
-            <h2><?php echo $datos_principales['collection_name']; ?></h2>
-
+    <?php if($datos_principales):?>
+        <div>
+            <h1>
+                <?php                 
+                    $term = get_term($datos_principales['collection_name']);
+                    echo $term->name; // Muestra el nombre o etiqueta de la taxonomía
+                ?>
+            </h1>
             
         </div>
-    </div>
-    <div class="collectionQataya contenedor">
-        <div class="collectionQataya__description">
-            <img src="" alt="">
-            <div class="">
-                <p>
-                    <?php echo $datos_principales['collection_description']; ?>
-                </p>
+        <section>
+            <div class="container">
+                <?php list_products_taxonomy($term) ?>
             </div>
-        </div>
-    </div>
+        </section>
+    <?php endif ?>
 <?php endwhile ?>
 <?php get_footer() ?>

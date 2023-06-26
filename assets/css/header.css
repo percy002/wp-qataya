@@ -1,31 +1,32 @@
 nav .brand-logo img{
-    padding: 0.5rem !important;
+    padding: 1rem !important;
 }
 .nav-wrapper ul a{
-    /* color: var(--grey-dark-color); */
     color: var(--grey-light-color);
     font-size: 1.6rem;
     font-weight: 600;
 }
 
 nav ul a:hover{
-    background-color: var(--main-color-alfa) !important;
+    /* background-color: var(--main-color-alfa) !important; */
+    color: var(--main-color);
+    background-color: transparent !important;
 }
 
 .sidenav{
-    background-color: var(--main-color) !important;
+    background-color: var(--black-color-transparent) !important;
 }
 .sidenav li>a{
     font-size: 1.6rem !important;
     padding: 0 32px !important;
-    font-family: var(--body-font);
+    font-family: var(--navbar-font);
     font-weight: 600 !important;
     /* color: var(--grey-dark-color) !important; */
     color: var(--grey-light-color) !important;
 }
 .sub-menu{
     padding-left: 2rem !important;
-    background-color: var(--main-color) !important; 
+    background-color: var(--black-color-transparent) !important; 
 }
 @media (min-width:992px) {
     .sub-menu{
@@ -56,3 +57,7 @@ li a.dropdown-trigger:focus {
 
 }
 /* menu mobile */
+/* modified materialize */
+/* .navbar-fixed{
+    height: 0 !important;
+} */

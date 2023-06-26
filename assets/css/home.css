@@ -12,6 +12,12 @@
     height: 100% !important;
 }
 
+.custom-height{
+    /* height: 90vh; */
+}
+.card .card-content{
+    padding: 10px !important;
+}
 
 .abstract__text{
     
@@ -27,6 +33,10 @@
 }
 .abstract div{
     flex: 1 1 50%;
+}
+.about-us p{
+    text-align: center;
+    font-family: var(--main-font);
 }
 .catalogo{
 }
@@ -47,5 +57,22 @@
     top: 2rem;
     left: 2rem;
 }
+.collection-image{
+    overflow: hidden;
+}
+.collection-image img {
+    transition: transform 0.5s ease;
+}
+  
+.collection-image:hover img {
+    transform: scale(1.2);
+}
+
+/* modificacion materialize  */
+.slider .slides li img {
+    background-position-x: center !important;
+    background-position-y: top !important;
+}
+
 
 

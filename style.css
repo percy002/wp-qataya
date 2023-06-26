@@ -17,18 +17,22 @@
     --main-font: 'Playfair Display', serif;
     --body-font: 'Lato', sans-serif;
 
-    /* colores */
-    --main-color: #916029;
-    --main-color-alfa: #916029BF;
+    --navbar-font: 'Quicksand', sans-serif;
+    --product-font: 'Raleway', sans-serif;
 
-    /* --colorSecundario: #F2E205; */
+    /* colores */
+    --main-color: #86A38D;
+    --main-color-alfa: #86A38DBF;
+
+    --secondary-color: #f6f6f6;
 
     /* escala de grises */
-    --grey-light-color: #E3E2E2;
+    --grey-light-color: #666666;
     --grey-color: #7E8C7B;
     /* --grey-dark-color: #282A36; */
     --grey-dark-color: #18191d;
     --black-color: #000000;
+    --black-color-transparent: #f6f6f6;
 }
 
 html{
@@ -66,16 +70,23 @@ h3{
     font-size: 2.4rem;
 }
 h4{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    color: #4d4d4d;
 }
 h5{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-family: var(--product-font);
+    text-align: center;
+    height: 2rem;
+    color: #333333;
 }
 a{
     text-decoration: none;
     font-size: 1.6rem;
     text-transform: capitalize;
     color: var(--grey-dark-color);
+    font-family: var(--navbar-font);
+    font-weight: 600;
 }
 
 strong{
@@ -83,7 +94,6 @@ strong{
 }
 p{
     color: var(--grey-dark-color);
-    letter-spacing: .07rem;
 }
 /* ul sin estilos */
 ul{
@@ -104,7 +114,7 @@ img{
 }
 nav{
     /* background-color: var(--grey-light-color); */
-    background-color: var(--main-color);
+    background-color: var(--black-color-transparent);
 }
 label{
     font-family: var(--main-font);
@@ -134,7 +144,7 @@ label{
 .container{
     margin: 0 auto;
     max-width: 1280px;
-    width: 90%;
+    width: 80%;
 }
 
 .double{
@@ -148,9 +158,13 @@ label{
         justify-content: space-between;
     }
 }
+
 .bg-grey{
     background-color: var(--grey-dark-color);
     padding: 2rem;
+}
+.bg-grey-secondary{
+    background-color: var(--secondary-color);
 }
 .bg-grey p{
     text-align: center;
@@ -219,7 +233,7 @@ label{
      top:50%;
      }
     .middle-indicator-text{
-     font-size: 5.2rem;
+     font-size: 6rem;
     }
     a.middle-indicator-text{
       color:white !important;
@@ -236,7 +250,7 @@ label{
         visibility: hidden;
     }
 .carousel-fixed-item i{
-    color: var(--grey-light-color);
+    color: #c7c6c6
 }
 
 /* modified card */
@@ -245,4 +259,11 @@ label{
     background-color: var(--grey-dark-color);
 }
 
-  
+.card {
+    box-shadow: none;
+  }
+/* modified button right left */
+.back-black{
+    background-color: #00000034;
+    border-radius: 4rem;
+}

@@ -51,7 +51,7 @@ function travelAgency_scripts_styles(){
         
     //cargar fuentes
 
-    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap', array(), '1.0.0');
+    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Quicksand:wght@400;600&family=Raleway:ital,wght@0,300;0,400;1,300&display=swap', array(), '1.0.0');
     
     //hoja de estilos principal
     wp_enqueue_style('style', get_stylesheet_uri(), array('normalize','googlefonts','materialize','home','header','footer','aboutUs','contact','product','category','products-services'), '1.0.0');
@@ -61,7 +61,7 @@ function travelAgency_scripts_styles(){
 
     // wp_enqueue_script("fontawesome",'https://kit.fontawesome.com/841e236107.js',array(''),"1.0.0",true );
 
-    wp_enqueue_script("scripts",get_template_directory_uri().'/assets/js/scripts.js',array('jquery','materializejs'),"1.0.0",true );
+    wp_enqueue_script("scripts",get_template_directory_uri().'/assets/js/scripts.js',array('jquery','materializejs',),"1.0.0",true );
 }
 add_action('wp_enqueue_scripts','travelAgency_scripts_styles');
 
