@@ -14,8 +14,10 @@
 /* custom properties */
 :root{
     /* fuentes */
-    --main-font: 'Playfair Display', serif;
+    --main-font: 'Inter', serif;
     --body-font: 'Lato', sans-serif;
+
+    --brand-font: "Dancing Script", cursive;
 
     --navbar-font: 'Quicksand', sans-serif;
     --product-font: 'Raleway', sans-serif;
@@ -33,6 +35,12 @@
     --grey-dark-color: #18191d;
     --black-color: #000000;
     --black-color-transparent: #f6f6f6;
+
+    /* text color */
+    --grey-text-color: #1E1E1E;
+
+    /* title color */
+    --title-color: #3C0C12;
 }
 
 html{
@@ -70,8 +78,9 @@ h3{
     font-size: 2.4rem;
 }
 h4{
-    font-size: 1.4rem;
-    color: #4d4d4d;
+    font-size: 1.25rem;
+    color: var(--title-color);
+
 }
 h5{
     font-size: 1.6rem;
@@ -93,7 +102,8 @@ strong{
     font-weight: 600;
 }
 p{
-    color: var(--grey-dark-color);
+    color: var(--grey-text-color);
+    size: 18px;
 }
 /* ul sin estilos */
 ul{
@@ -123,6 +133,7 @@ label{
     
     font-weight: 600;
 }
+
 .wpcf7-submit{
     color: var(--grey-dark-color);
     padding: 1rem;
