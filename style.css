@@ -23,6 +23,7 @@
     --product-font: 'Raleway', sans-serif;
 
     /* colores */
+    --primary: #758C7C;
     --main-color: #86A38D;
     --main-color-alfa: #86A38DBF;
 
@@ -129,13 +130,15 @@ nav{
 label{
     font-family: var(--main-font);
     font-size: 1.6rem;
-    color: var(--grey-dark-color);
+    color: var(--primary);
     
     font-weight: 600;
 }
 
 .wpcf7-submit{
-    color: var(--grey-dark-color);
+    width: 100%;
+    background-color: var(--primary);
+    color: white;
     padding: 1rem;
     text-align: center;
     font-size: 1.6rem;
@@ -146,10 +149,10 @@ label{
 }
 .wpcf7-text,
 .wpcf7-textarea{
-    color: var(--grey-dark-color);
+    /* color: var(--grey-dark-color);
     font-family: var(--body-font);
     font-size: 1.6rem;
-    border-bottom: 1px solid var(--main-color-alfa) !important;
+    border-bottom: 1px solid var(--main-color-alfa) !important; */
 }
 /* stilos de contenedor */
 .container{

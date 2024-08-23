@@ -133,28 +133,28 @@
                 </div>
             </div>
         </div>
-        <div class="flex justify-center Z-10">
-            <button class="bg-brown-light text-white font-semibold py-[15px] px-[30px] focus:bg-brown-light Z-10">VER MAS
+        <div class="flex justify-center z-10">
+            <button class="bg-brown-light text-white font-semibold py-[15px] px-[30px] focus:bg-brown-light">VER MAS
                 PRODUCTOS</button>
         </div>
     </section>
-    <section class="py-[60px] bg-gris w-full">
-        <div class="flex w-full items-center h-[80vh]">
-            <div class="hidden sm:block bg-brown-light w-2/12 h-1/2">
+    <section class="py-[60px] bg-gris w-full h-fit">
+        <div class="flex flex-col lg:flex-row w-full items-center">
+            <div class="sm:flex bg-brown-light w-2/12 h-1/2">
 
             </div>
-            <div class="w-full sm:w-6/12">
+            <div class="w-full lg:w-6/12">
                 <lite-youtube videoid="Va7AqGifX74"></lite-youtube>
 
                 <!-- <?php if (get_field('video')): ?>
                     <?php echo $video ?>
                 <?php endif ?> -->
             </div>
-            <div class="relative bg-tejido-espiral bg-cover bg-center w-4/12 h-[80%] hidden sm:block">
+            <div class="relative bg-tejido-espiral bg-cover bg-center w-full lg:w-4/12 h-full lg:h-[80%]">
                 <div class="absolute inset-0 bg-black opacity-50"></div>
-                <div class="h-full flex flex-col px-[30px] justify-center">
+                <div class="h-full py-10 flex flex-col px-[30px] justify-center">
                     <div class="flex flex-col gap-1 z-10 ">
-                        <p class="text-[48px] text-white text-pretty">PRODUCTOS DE ALTA CALIDAD</p>
+                        <p class="text-[48px] text-white text-beauty">PRODUCTOS DE ALTA CALIDAD</p>
                         <p class="text-[40px] text-[#C8C8C8]">PARA OFRECERTE</p>
                     </div>
                     <div class="flex justify-center z-10">
@@ -167,18 +167,35 @@
             </div>
         </div>
     </section>
-    <section class="">
-        <div class="container">
-            <h3>
-                <?php if (get_locale() == 'en_US'): ?>
-                    Get In Touch With Us
-                <?php else: ?>
-                    Pongase en Contacto Con Nosotros
-                <?php endif ?>
+    <section class="relative bg-contacto bg-center bg-cover py-5 px-10 lg:py-[60px] lg:pl-[150px]">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
 
-            </h3>
-            <div class="contact-qataya">
-                <?php get_template_part("template-parts/contact_form") ?>
+        <div class="w-full lg:w-1/2 py-[30px] px-[46px] flex flex-col gap-[10px] z-10">
+            <div class="z-10 bg-white/80 ">
+
+                <h3 class="text-[28px] font-semibold text-primary">
+                    ¡Envíanos un Correo Electrónico!
+                </h3>
+                <div class="color-primary">
+                    <?php get_template_part("template-parts/contact_form") ?>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative h-[255px] bg-lana bg-cover bg-center">
+        <div class="absolute inset-0 bg-black opacity-60 z-1"></div>
+
+        <div class="flex py-[50px] px-[100px]  h-full items-center ">
+            <div class="flex-1  z-10">
+                <p class="text-center text-[64px] text-white font-dancing">Creemos algo juntos</p>
+                <p class="text-center text-[24px] text-white">Trasladamos tus ideas a tus productos</p>
+            </div>
+            <div class="flex-1 z-10">
+                <div class="flex justify-center ">
+                    <button class="bg-brown-light text-white font-semibold py-[15px] px-[30px] focus:bg-primary">VER MAS
+                        Contáctenos
+                    </button>
+                </div>
             </div>
         </div>
     </section>

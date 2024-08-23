@@ -23,11 +23,14 @@
                     colors: {
                         gris: '#ECECEC',
                         'brown-light': '#CCA57E',
+                        primary: '#758C7C',
 
                     },
                     backgroundImage: {
                         tejido: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-tejido.webp')",
                         'tejido-espiral': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/tejido_espiral.jpg')",
+                        'contacto': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-contacto.jpg')",
+                        'lana': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-lana.jpg')",
                     },
                     fontFamily: {
                         dancing: ['"Dancing Script"', 'sans-serif'],
