@@ -45,8 +45,9 @@
     --main-font: 'Inter', serif;
     --body-font: 'Inter', serif;
 
-    --brand-font: "Dancing Script", cursive;
+    --brand-font: "Dancing Script", sans-serif;
     --other-font: 'Source Serif Pro', serif;
+    --menu-font: 'playfair display', serif;
 
     --navbar-font: 'Quicksand', sans-serif;
     --product-font: 'Raleway', sans-serif;
@@ -163,7 +164,9 @@ label{
     
     font-weight: 600;
 }
-
+button:focus{
+    background-color: transparent;
+}
 .wpcf7-submit{
     width: 100%;
     background-color: var(--primary);

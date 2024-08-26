@@ -40,6 +40,7 @@
                 <img src="<?php echo $portada1['url'] ?>">
             </li>
         </ul>
+        <div class="absolute inset-0 bg-black opacity-30 z-[5]"></div>
     </div>
     <section class="pt-[120px] pb-[80px] bg-gris ">
         <div class="flex flex-col gap-[30px] px-5 sm:px-[180px] about-us items-center">

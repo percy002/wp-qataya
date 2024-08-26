@@ -26,12 +26,24 @@ nav ul a:hover{
 }
 .sub-menu{
     padding-left: 2rem !important;
-    background-color: var(--black-color-transparent) !important; 
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+
 }
-@media (min-width:992px) {
-    .sub-menu{
-        padding: 0 !important;
-    }
+.sub-menu a{
+    font-size: 25px !important;
+
+}
+.sub-menu.show {
+    display: block;
+    opacity: 1;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .collapsible-body ul a{
     padding: 0 44px;
@@ -43,6 +55,27 @@ nav ul a:hover{
 .dropdown-content li>a, .dropdown-content li>span{
     color: var(--grey-light-color) !important;
     
+}
+.menu-item a{
+    color: #545C63;
+    font-family: var(--menu-font);
+    font-style: italic;
+    font-weight: 700 ;
+    font-size: 32px;
+}
+.bg-stone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #B8B8B8;
+    opacity: 0.5;
+    z-index: -1;
+}
+.overflow-hidden {
+    overflow: hidden;
 }
 /* bug materialize */
 .dropdown-content{
@@ -56,8 +89,3 @@ li a.dropdown-trigger:focus {
     margin-top: -0.5rem;
 
 }
-/* menu mobile */
-/* modified materialize */
-/* .navbar-fixed{
-    height: 0 !important;
-} */
