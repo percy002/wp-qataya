@@ -84,7 +84,7 @@
         <div class="absolute inset-0 bg-black opacity-30"></div>
 
         <div class="z-10">
-            <h3 class="text-[70px] font-dancing text-white">Nuestras colecciones</h3>
+            <h3 class="text-[70px] font-dancing text-white">Nuestras Colecciones</h3>
         </div>
         <div class="collections container row ">
             <div class="col s12 m4">
@@ -140,7 +140,7 @@
     </section>
     <section class="py-[60px] bg-gris w-full h-fit">
         <div class="flex flex-col lg:flex-row w-full items-center">
-            <div class="sm:flex bg-brown-light w-2/12 h-1/2">
+            <div class="hidden lg:flex bg-brown-light w-2/12 h-1/2 lg:min-h-[200px] xl:min-h-[300px]">
 
             </div>
             <div class="w-full lg:w-6/12">
@@ -170,11 +170,11 @@
     <section class="relative bg-contacto bg-center bg-cover py-5 px-10 lg:py-[60px] lg:pl-[150px]">
         <div class="absolute inset-0 bg-black opacity-50"></div>
 
-        <div class="w-full lg:w-1/2 py-[30px] px-[46px] flex flex-col gap-[10px] z-10">
-            <div class="z-10 bg-white/80 ">
+        <div class="w-full lg:w-1/2 flex">
+            <div class="z-10 bg-white/80 py-[30px] px-[46px] flex flex-col gap-[10px]  ">
 
                 <h3 class="text-[28px] font-semibold text-primary">
-                    ¡Envíanos un Correo Electrónico!
+                    ¡Envíanos un correo electrónico!
                 </h3>
                 <div class="color-primary">
                     <?php get_template_part("template-parts/contact_form") ?>
@@ -182,18 +182,18 @@
             </div>
         </div>
     </section>
-    <section class="relative h-[255px] bg-lana bg-cover bg-center">
+    <section class="relative bg-lana bg-cover bg-center">
         <div class="absolute inset-0 bg-black opacity-60 z-1"></div>
 
-        <div class="flex py-[50px] px-[100px]  h-full items-center ">
-            <div class="flex-1  z-10">
-                <p class="text-center text-[64px] text-white font-dancing">Creemos algo juntos</p>
-                <p class="text-center text-[24px] text-white">Trasladamos tus ideas a tus productos</p>
+        <div class="flex flex-col lg:flex-row gap-y-5  py-[50px] px-3 lg:px-[100px]  h-full items-center ">
+            <div class="flex-1  z-10 lg:border-r-2 border-white">
+                <p class="text-center text-[36px] lg:text-[64px] text-white font-dancing">Creemos algo juntos</p>
+                <p class="text-center text-[15px] lg:text-[24px] text-white">Trasladamos tus ideas a tus productos</p>
             </div>
             <div class="flex-1 z-10">
                 <div class="flex justify-center ">
-                    <button class="bg-brown-light text-white font-semibold py-[15px] px-[30px] focus:bg-primary">VER MAS
-                        Contáctenos
+                    <button class="bg-brown-light text-white font-semibold py-[15px] px-[30px] focus:bg-primary">
+                        CONTÁCTENOS
                     </button>
                 </div>
             </div>

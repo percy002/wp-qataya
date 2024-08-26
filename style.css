@@ -12,12 +12,41 @@
 
 */
 /* custom properties */
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('fonts/SourceSerifPro-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('fonts/SourceSerifPro-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('fonts/SourceSerifPro-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('fonts/SourceSerifPro-BoldItalic.otf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
 :root{
     /* fuentes */
     --main-font: 'Inter', serif;
-    --body-font: 'Lato', sans-serif;
+    --body-font: 'Inter', serif;
 
     --brand-font: "Dancing Script", cursive;
+    --other-font: 'Source Serif Pro', serif;
 
     --navbar-font: 'Quicksand', sans-serif;
     --product-font: 'Raleway', sans-serif;
