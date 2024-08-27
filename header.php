@@ -31,13 +31,16 @@
                     },
                     backgroundImage: {
                         tejido: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-tejido.webp')",
+                        'tejido-2': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-tejido-2.webp')",
                         'tejido-espiral': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/tejido_espiral.jpg')",
                         'contacto': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-contacto.jpg')",
                         'lana': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-lana.jpg')",
                         stone: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/stone.webp')",
+                        prenda: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-prenda.jpg')",
                     },
                     fontFamily: {
                         dancing: ['"Dancing Script"', 'sans-serif'],
+                        playfair: ['"Playfair Display"', 'sans-serif'],
                     },
 
                 }
