@@ -81,7 +81,7 @@
         </div>
     </section>
     <!--  -->
-    <section class="relative bg-tejido bg-cover bg-center py-[50px] flex flex-col gap-y-10">
+    <section class="relative bg-tejido bg-cover bg-center py-[50px] flex flex-col gap-y-10 lg:px-[180px]">
         <div class="absolute inset-0 bg-black opacity-30"></div>
 
         <div class="z-10">

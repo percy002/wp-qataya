@@ -1,71 +1,44 @@
-<?php 
+<?php
 /*
     Template Name: pagina contacto
 */
 
 get_header(); ?>
-<?php while(have_posts()): the_post(); ?>
-    <div class="hero-secondary" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
-        <div class="contenido-hero">
-            <h2><?php the_title(); ?></h2>
-        </div>
-    </div>
-    <?php 
-        if(get_field('direccion')) $direccion=get_field('direccion');
-        if(get_field('telefono')) $telefono=get_field('telefono');
-        if(get_field('correo_electronico')) $correo=get_field('correo_electronico');
-    ?>
-    <section>
-        <div class="container">
-        </div>
-    </section>
-    <section>
-        <div class="info_qataya container">
-            <div class="">
+<?php while (have_posts()):
+    the_post(); ?>
+    <div class="relative h-[350px] bg-wool bg-center">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
 
-                <?php if(get_field('direccion')): ?>
-                    <div class="">
-                        <?php if(get_locale()=='en_US'): ?>
-                            <h3>Visit Us At:</h3>
-                        <?php else: ?>
-                            <h3>Visitenos en:</h3>
-                        <?php endif ?>
-                        <p><?php echo $direccion ?></p>            
-                    </div>
-                <?php endif ?>
-                <div class="">
-                    <?php if(get_locale()=='en_US'): ?>
-                        <h3>Call Us On:</h3>
-                    <?php else: ?>
-                        <h3>Lamanos:</h3>
-                    <?php endif ?>
-                    <p><?php echo $telefono ?></p>            
-                </div>
-                <div class="">
-                    <?php if(get_locale()=='en_US'): ?>
-                        <h3>Email Us:</h3>
-                    <?php else: ?>
-                        <h3>Escribenos:</h3>
-                    <?php endif ?>
-                    <p><?php echo $correo ?></p>            
-                </div>
+        <div class="h-full flex flex-col justify-center items-center font-playfair italic">
+            <div class="flex justify-center">
+                <h2 class="z-10 text-white text-[60px] font-playfair italic"><?php the_title(); ?></h2>
+            </div>
+            <div class="flex gap-10 text-white z-10 text-[32px]">
+                <span>Inicio</span>
+                <span>Contacto</span>
             </div>
         </div>
-        
-    </section>
-    <section>
-        <div class="container">
+    </div>
+    <?php
+    if (get_field('direccion'))
+        $direccion = get_field('direccion');
+    if (get_field('telefono'))
+        $telefono = get_field('telefono');
+    if (get_field('correo_electronico'))
+        $correo = get_field('correo_electronico');
+    ?>
+    <section class="relative bg-modelo1 bg-left bg-cover py-5 px-10 lg:py-[60px] lg:px-[150px]">
+        <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
 
-            <h3>
-                <?php if(get_locale()=='en_US'): ?>
-                    Get In Touch With Us
-                <?php else: ?>
-                    Pongase en Contacto Con Nosotros
-                <?php endif ?>
-                
-            </h3>
-            <div class="contact-qataya">
-                <?php get_template_part("template-parts/contact_form") ?>
+        <div class="w-full flex flex-col lg:flex-row lg:justify-between">
+            <div class="flex-1 "></div>
+            <div class="flex-1 z-10 bg-white/80 py-[30px] px-[46px] flex flex-col gap-[10px]  xl:max-w-[40%]">
+                <h3 class="text-[28px] font-semibold text-primary">
+                    ¡Envíanos un correo electrónico!
+                </h3>
+                <div class="color-primary">
+                    <?php get_template_part("template-parts/contact_form") ?>
+                </div>
             </div>
         </div>
     </section>

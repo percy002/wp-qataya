@@ -37,6 +37,8 @@
                         'lana': "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-lana.jpg')",
                         stone: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/stone.webp')",
                         prenda: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/bg-prenda.jpg')",
+                        wool: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/wool-texture.jpg')",
+                        modelo1: "url('<?php echo get_template_directory_uri(); ?>/assets/img/bg/modelo1.jpg')",
                     },
                     fontFamily: {
                         dancing: ['"Dancing Script"', 'sans-serif'],
@@ -75,9 +77,9 @@
     <header>
 
         <div class="fixed z-20">
-            <div class="w-screen flex justify-between px-20 py-4 items-center">
+            <div class="w-screen flex justify-between px-20 py-16 items-center">
                 <div class="">
-                    <a class="brand-logo "><img class="responsive-img"
+                    <a class="brand-logo "><img class="h-[40px]"
                             src="<?php echo get_template_directory_uri(); ?>\assets\img\logo-qataya-blanco.png"
                             alt="logo qataya">
                     </a>

@@ -17,7 +17,7 @@ get_header(); ?>
             <div class="flex justify-center">
                 <h2 class="z-10 text-white text-[60px] font-playfair italic"><?php the_title(); ?></h2>
             </div>
-            <div class="flex gap-10 text-white z-10 text-[32px]">
+            <div class="flex gap-10 text-white z-10 text-[24px]">
                 <span>Inicio</span>
                 <span>Nosotros</span>
             </div>
