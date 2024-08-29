@@ -1,4 +1,21 @@
 <footer class="footer">
+    <section class="relative bg-lana bg-cover bg-center">
+        <div class="absolute inset-0 bg-black opacity-60 z-1"></div>
+
+        <div class="flex flex-col lg:flex-row gap-y-5  py-[50px] px-3 lg:px-[100px]  h-full items-center ">
+            <div class="flex-1  z-10 lg:border-r-2 border-white">
+                <p class="text-center text-[36px] lg:text-[64px] text-white font-dancing">Creemos algo juntos</p>
+                <p class="text-center text-[15px] lg:text-[24px] text-white">Trasladamos tus ideas a tus productos</p>
+            </div>
+            <div class="flex-1 z-10">
+                <div class="flex justify-center ">
+                    <button class="bg-brown-light text-white font-semibold py-[15px] px-[30px] focus:bg-primary">
+                        CONTÁCTENOS
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="flex flex-col lg:flex-row  gap-y-[30px] gap-x-[50px] lg:justify-center text-white py-[40px] px-[20px]">
         <div
             class="w-full lg:w-1/3 flex flex-col gap-3 border-b-2 pb-5 lg:border-b-0 lg:pr-[50px] lg:border-r border-white">
@@ -48,9 +65,11 @@
 
             </h3>
             <div class="flex gap-4">
-                <a target="_blank" href="https://www.facebook.com/qatayperu"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a target="_blank" href="https://www.facebook.com/qatayperu"><i
+                        class="fab fa-facebook-square fa-2x"></i></a>
                 <a target="_blank" href="https://www.instagram.com/qatayperu/"><i class="fab fa-youtube fa-2x"></i></a>
-                <a target="_blank" href="https://www.instagram.com/qatayperu/"><i class="fab fa-instagram fa-2x"></i></a>
+                <a target="_blank" href="https://www.instagram.com/qatayperu/"><i
+                        class="fab fa-instagram fa-2x"></i></a>
 
             </div>
 

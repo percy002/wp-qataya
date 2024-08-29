@@ -63,8 +63,8 @@
     ?>
     <?php if ($products->have_posts()): ?>
         <div class="">
-            <div class="flex justify-center">
-                <div class="flex flex-wrap gap-[25px]">
+            <div class="flex mx-auto">
+                <div class="flex flex-wrap gap-[25px] justify-center">
 
                     <?php while ($products->have_posts()):
                         $products->the_post(); ?>
@@ -73,7 +73,7 @@
                         $productName = get_field('nombre_producto');
                         $details = get_field("descripcion");
                         ?>
-                        <div class="min-w-[250px] max-w-[20%]">
+                        <div class="min-w-[200px] max-w-[20%]">
                             <div class="flex flex-col">
                                 <div class="">
                                     <a href="<?php echo get_permalink() ?>">

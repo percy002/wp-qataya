@@ -26,6 +26,7 @@
                         'grey-menu': '#545C63',
                         'brown-light': '#CCA57E',
                         primary: '#758C7C',
+                        second: '#A6815C',
                         'black-30': 'rgba(0,0,0,0.3)',
 
                     },
